@@ -1,3 +1,4 @@
-This script ius designed to be a simple password strength checker. It taks into account password length, the presence of both uppercase and lowercase letters, and the presence of either a symbol/special character or a number. 
+This script is designed to be a simple password strength checker. It taks into account password length, the presence of both uppercase and lowercase letters, and the presence of either a symbol/special character or a number. 
 
-GitHub link: TBA
+GitHub link: https://github.com/AlexW-WSC/Python-Practice-/tree/main/milestone_2
+
