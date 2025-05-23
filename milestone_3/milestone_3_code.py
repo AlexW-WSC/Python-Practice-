@@ -36,7 +36,7 @@ while playing == True:
     elif score <= (len(questions) / 2) and score != 0:
         print("Your score was {}/{}. A good effort.".format(score, len(questions)))
     elif score == 0:
-        print("Your score was {}/{}. You got them all wrong. There is no hope for you.".format(score, len(questions)))
+        print("Your score was {}/{}. You got them all wrong. Better luck next time!".format(score, len(questions)))
     
     playing_status = input("Would you like to try again?").strip().lower()
     if playing_status == "no":
