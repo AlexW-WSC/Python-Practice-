@@ -1,1 +1,1 @@
-Quiz application
+Editable open-source quiz application framework based on a custom list of answers & questions. Is repeatable without running the script again if needed. After an iteration of the quiz, prints out user score with an encouraging message. 
