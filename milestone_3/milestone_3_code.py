@@ -50,9 +50,10 @@ while playing == True:
         print("Your score was {}/{}. You got them all wrong. Better luck next time!".format(score, len(questions)))
     # checks if the loop should run again absed on the 'playing' variable 
     playing_status = input("Would you like to try again?").strip().lower()
-    if playing_status == "no":
+    if playing_status == "yes":
+        playing = True
+    else:
         playing = False
-
 # otherwise, ends the script        
 print("Thanks for playing!")
 quit()

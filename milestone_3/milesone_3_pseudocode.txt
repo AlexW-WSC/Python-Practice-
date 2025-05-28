@@ -1,0 +1,23 @@
+LIST questions
+LIST answers
+
+OUTPUT: welcome to the quiz
+
+while playing is true:
+    for amount of questions:
+        answer = INPUT: question x
+        IF answer = answer x:
+            ADD score
+            OUTPUT good job
+        else:
+            OUTPUT unlucky
+    OUTPUT score
+    playingstatus = INPUT: keep playing?
+    if playingstatus == yes:
+        playing = true 
+    else:
+        playing = false
+
+OUTPUT thanks for playing
+quit
+
