@@ -1,8 +1,14 @@
+import random
+
 # If you would like to edit this script, you can simply place each question and correct answer into their respective list variables. Please ensure that each question is 'paired' with an answer (question 1 in the questions list should would be answer 1 in the answers list, etc.), and that both lists contain the same number of items.
+
+
 
 # lists with questions, answers
 questions = ["What colour are baby pandas?", "How is 'else if' written in Python?", "What is the meaning of life?",]
 correctanswers = ["pink", "elif", "42"]
+
+
 
 # aborts the application if the amount of questions is not the same as the amount of answers(the script will not work.)
 if len(questions) != len(correctanswers):   
@@ -10,7 +16,8 @@ if len(questions) != len(correctanswers):
     quit()
 
 
-print("Welcome to the quiz!!!! This quiz has {} questions.".format(len(questions)))
+
+print("Welcome to the quiz!!!! This quiz has {} questions. None of your answers are stored.".format(len(questions)))
 print("")
 
 
@@ -23,6 +30,15 @@ score = 0
 # main logic loop starts here, first checks for the playing variable (in case of a retry)
 while playing == True:
     score = 0
+
+    #randomises question order
+    temp_list = list(zip(questions, correctanswers)) # pairs lists
+    random.shuffle(temp_list) # shuffles the pair 
+    question_list_temp, answer_list_temp = zip(*temp_list) # unzips again
+
+    questions, correctanswers = list(question_list_temp), list(answer_list_temp) # reassign the lists 
+
+
     for i in range(len(questions)):
         
         if playing == True:
