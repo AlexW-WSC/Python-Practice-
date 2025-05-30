@@ -18,7 +18,6 @@ if len(questions) != len(correctanswers):
 
 
 print("Welcome to the quiz!!!! This quiz has {} questions. None of your answers are stored.".format(len(questions)))
-print("")
 
 
 
@@ -44,26 +43,26 @@ while playing == True:
         if playing == True:
             answer = None
             # pulls the question from the list and asks for input 
-            answer = input("Question {}: ".format(i + 1) + questions[i]).strip().lower()
+            answer = input("\nQuestion {}: ".format(i + 1) + questions[i]).strip().lower()
             
             # increases score if answer is correct 
             if answer == correctanswers[i]:
-                print("{} was correct, great job.".format(correctanswers[i]))
+                print("\n{} was correct, great job.".format(correctanswers[i]))
                 score += 1
             else:
-                print("{} was incorrect, better luck next time!".format(answer))
+                print("\n{} was incorrect, better luck next time!".format(answer))
             if answer == None:
-                print("0w0 you entered nothing")
+                print("\n0w0 you entered nothing")
             answer = None
     # after the loop, prints scores based on percentage of answers correct(100%, over 50%, under 50%, 0%)
     if score == len(questions):
-        print("Your score was {}/{}. You got them all correct!".format(score, len(questions)))
+        print("\nYour score was {}/{}. You got them all correct!".format(score, len(questions)))
     elif score >= (len(questions) / 2):
-        print("Your score was {}/{}. Not bad.".format(score, len(questions)))
+        print("\nYour score was {}/{}. Not bad.".format(score, len(questions)))
     elif score <= (len(questions) / 2) and score != 0:
-        print("Your score was {}/{}. A good effort.".format(score, len(questions)))
+        print("\nYour score was {}/{}. A good effort.".format(score, len(questions)))
     elif score == 0:
-        print("Your score was {}/{}. You got them all wrong. Better luck next time!".format(score, len(questions)))
+        print("\nYour score was {}/{}. You got them all wrong. Better luck next time!".format(score, len(questions)))
     # checks if the loop should run again absed on the 'playing' variable 
     playing_status = input("Would you like to try again?").strip().lower()
     if playing_status == "yes":
@@ -71,7 +70,7 @@ while playing == True:
     else:
         playing = False
 # otherwise, ends the script        
-print("Thanks for playing!")
+print("\nThanks for playing!")
 quit()
 
 
